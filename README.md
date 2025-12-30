@@ -15,7 +15,7 @@ A comprehensive Android application featuring a reusable incidents observability
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone [<repository-url>](https://github.com/csalasm1/observer_project_carlos_gabriel_salas)
    cd ObserverProject
    ```
 
@@ -130,4 +130,16 @@ ObserverProject/
 
 ---
 
-Built with ❤️ using Kotlin, Jetpack Compose, and Clean Architecture principles.
+## Overview
+
+# Homescreen
+<img width="405" height="886" alt="Captura de pantalla 2025-12-30 a la(s) 8 31 29 a  m" src="https://github.com/user-attachments/assets/868c2077-ea36-4516-a38d-df48104c7d4c" />
+
+# Crash Simulation Screen
+<img width="407" height="886" alt="Captura de pantalla 2025-12-30 a la(s) 8 33 10 a  m" src="https://github.com/user-attachments/assets/228042f3-a50b-48f6-9321-eb4da17db820" />
+
+# Real-time Dashboard
+<img width="409" height="891" alt="Captura de pantalla 2025-12-30 a la(s) 8 33 56 a  m" src="https://github.com/user-attachments/assets/9da4fa5c-051b-49cc-8379-8a3d64e99699" />
+<img width="404" height="888" alt="Captura de pantalla 2025-12-30 a la(s) 8 34 13 a  m" src="https://github.com/user-attachments/assets/d22761f9-2a99-41b5-8f2b-f1156b6af749" />
+
+
