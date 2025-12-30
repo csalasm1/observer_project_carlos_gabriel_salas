@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.incidentsdk.IncidentTrackerTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2025-12-30T12:25:29" hostname="COD4D9JYXL26.local" time="0.06">
+  <properties/>
+  <testcase name="reset_allowsReinitialization" classname="com.example.incidentsdk.IncidentTrackerTest" time="0.05"/>
+  <testcase name="getSummary_returnsEmptyWhenNoIncidents" classname="com.example.incidentsdk.IncidentTrackerTest" time="0.001"/>
+  <testcase name="trackIncident_overridesTrackedScreenWhenScreenNameProvided" classname="com.example.incidentsdk.IncidentTrackerTest" time="0.001"/>
+  <testcase name="trackIncident_withEmptyMetadata_works" classname="com.example.incidentsdk.IncidentTrackerTest" time="0.001"/>
+  <testcase name="trackIncident_withAllSeverityLevels_works" classname="com.example.incidentsdk.IncidentTrackerTest" time="0.001"/>
+  <testcase name="trackIncident_preservesUserMetadata" classname="com.example.incidentsdk.IncidentTrackerTest" time="0.001"/>
+  <testcase name="trackScreen_updatesCurrentScreen" classname="com.example.incidentsdk.IncidentTrackerTest" time="0.001"/>
+  <testcase name="trackIncident_usesLastTrackedScreenWhenScreenNameNull" classname="com.example.incidentsdk.IncidentTrackerTest" time="0.001"/>
+  <testcase name="getSummary_throwsExceptionWhenNotInitialized" classname="com.example.incidentsdk.IncidentTrackerTest" time="0.0"/>
+  <testcase name="getSummary_delegatesCorrectlyToRepository" classname="com.example.incidentsdk.IncidentTrackerTest" time="0.001"/>
+  <testcase name="trackScreen_throwsExceptionWhenNotInitialized" classname="com.example.incidentsdk.IncidentTrackerTest" time="0.001"/>
+  <testcase name="trackIncident_enrichesMetadataWithConfig" classname="com.example.incidentsdk.IncidentTrackerTest" time="0.001"/>
+  <testcase name="trackIncident_throwsExceptionWhenNotInitialized" classname="com.example.incidentsdk.IncidentTrackerTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

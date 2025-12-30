@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ObserverProject</string>
+
+    <!-- Common -->
+    <string name="loading">Loading data…</string>
+    <string name="error_title">⚠️ Error</string>
+    <string name="error_loading_summary">Error loading summary: %1$s</string>
+    <string name="retry">Retry</string>
+    <string name="refresh_data">Refresh Data</string>
+
+    <!-- Screen Titles -->
+    <string name="screen_title_home">Incident Tracker</string>
+    <string name="screen_title_detail">Detail</string>
+    <string name="screen_title_dashboard">Dashboard</string>
+
+    <!-- Home Screen -->
+    <string name="home_welcome_title">Welcome to the Incident Tracker app!</string>
+    <string name="home_welcome_description">This app demonstrates the Incident SDK. Use the buttons below to simulate different types of incidents. You can view the aggregated data on the Dashboard.</string>
+    <string name="home_section_simulate">Simulate Incidents</string>
+    <string name="home_section_navigation">Navigation</string>
+    <string name="home_button_low_incident">Simulate Low Incident</string>
+    <string name="home_button_medium_incident">Simulate Medium Incident</string>
+    <string name="home_button_high_incident">Simulate High Incident</string>
+    <string name="home_button_go_to_detail">Go to Detail Screen</string>
+    <string name="home_button_view_dashboard">View Dashboard</string>
+
+    <!-- Detail Screen -->
+    <string name="detail_title">Incident Detail Screen</string>
+    <string name="detail_description">This is a secondary screen where you can simulate more incidents. It also includes the option to simulate an app crash (debug mode only).</string>
+    <string name="detail_section_simulate">Simulate Incidents</string>
+    <string name="detail_button_low_incident">Simulate Low Incident</string>
+    <string name="detail_button_high_incident">Simulate High Incident</string>
+    <string name="detail_button_critical_incident">Simulate Critical Incident</string>
+    <string name="detail_danger_zone_title">⚠️ Danger Zone</string>
+    <string name="detail_danger_zone_description">The following button will simulate an app crash. This only works in debug mode.</string>
+    <string name="detail_button_simulate_crash">💥 Simulate Crash</string>
+
+    <!-- Dashboard Screen -->
+    <string name="dashboard_total_incidents">Total Incidents</string>
+    <string name="dashboard_incidents_by_severity">Incidents by Severity</string>
+    <string name="dashboard_incidents_by_screen">Incidents by Screen</string>
+    <string name="dashboard_simulate_incidents">Simulate Incidents</string>
+    <string name="dashboard_button_low">Low</string>
+    <string name="dashboard_button_medium">Medium</string>
+    <string name="dashboard_button_high">High</string>
+    <string name="dashboard_incidents_over_time">📊 Incidents Over Time</string>
+    <string name="dashboard_no_incidents">No incidents recorded</string>
+    <string name="dashboard_no_incidents_in_period">No incidents in this period</string>
+    <string name="dashboard_last_minutes">Last %1$d minutes</string>
+    <string name="dashboard_incidents_count">%1$d incidents</string>
+    <string name="dashboard_minutes_ago">-%1$d min</string>
+    <string name="dashboard_now">Now</string>
+
+    <!-- Severity Labels -->
+    <string name="severity_critical">Critical</string>
+    <string name="severity_high">High</string>
+    <string name="severity_medium">Medium</string>
+    <string name="severity_low">Low</string>
+
+    <!-- Chart Legend -->
+    <string name="legend_home">Home</string>
+    <string name="legend_detail">Detail</string>
+    <string name="legend_dashboard">Dashboard</string>
+</resources>
