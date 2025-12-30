@@ -128,7 +128,49 @@ ObserverProject/
 - **Debug Features**: Crash simulation only works in debug builds
 - **Navigation**: Compose Navigation with bottom bar integration
 
+## 🚧 Next Steps
+
+To continue evolving the SDK and improve scalability and user insights:
+
+### 📌 SDK Optimization for Large-Scale Data
+
+- Implement **direct SQLite filtering queries**, avoiding loading all incidents into memory before filtering.  
+  This drastically reduces overhead for queries like date ranges, severities, or screen names.
+
+- Add a **pagination layer for date-based browsing**, preventing heavy retrieval when the database grows.  
+  This allows the dashboard to load incidents incrementally and remain performant.
+
+- Add **userId and segmentation support** in the incident model, enabling filtering by user properties commonly used in analytics and experimentation platforms.
+
+### 📊 Tracing & Funnel Analytics
+
+- Implement **traces** to track how users move through the dashboard and navigation layers.  
+- Build a **funnel visualization feature** to measure conversion (e.g., from viewing incidents → filtering → drilling into detail).
+
+These additions will make the SDK not only an observability tool but a **behavioral analytics platform**.
+
 ---
+
+## 📝 Mini Postmortem
+
+While implementing the real-time dashboard, the goal was for it to **react live to database changes**.  
+However, this only made sense if incidents could also be **created directly from the dashboard**.
+
+When I started adding incident-creation actions in the UI, I realized the ViewModels were filling up with **boilerplate code**, because each ViewModel needed to call the tracking SDK manually.
+
+This led to an important architectural realization:
+
+> I needed to cleanly encapsulate incident creation behind a **Use Case**, instead of calling the SDK from every ViewModel.
+
+By introducing a dedicated `TrackIncidentUseCase`, I:
+
+- Centralized the logic  
+- Reduced coupling  
+- Removed repeated code  
+- Made event tracking callable from anywhere with a simple, clean API  
+
+This significantly improved maintainability and highlighted why **use cases are essential in Clean Architecture**, especially when dealing with shared resources like SDKs.
+
 
 ## Overview
 
